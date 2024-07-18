@@ -73,18 +73,23 @@ body {
 }
 
 .card-group{
-    border: solid 2px green;
+    border: transparent;
+    /* border: solid 2px green; */
 }
 
 img{
     width: 80%;
     height: 80%;
     /* display: flex; */
-    border: solid 2px red;
+    /* border: solid 2px red; */
 }
 
 .card{
-    
+    align-items: center;
+
+    border: transparent;
+
+
 }
 
 
