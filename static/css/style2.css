@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background-color: #282c34;
 }
+
 .blue-box {
     background-image: url('/img/3.gif');
     background-repeat: no-repeat;
