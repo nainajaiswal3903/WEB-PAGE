@@ -28,8 +28,8 @@ body {
 }
 
 #currentTime{
-    /* padding-top: 50%; */
-    /* padding-bottom: 30px; */
+    padding-top: 50px; 
+    padding-bottom: 30px;
     color: var(--skincolor);
     font-size: larger;
     font-size: xx-large;
@@ -92,7 +92,6 @@ img {
     height: 70%;
     margin-bottom: -20%;
     margin-top: 1%;
-    /* margin-left: 10%; */
     align-items: center;
 }
 
@@ -100,7 +99,6 @@ img {
 .card{
     align-items: center;
     justify-content: center;
-    border: solid 2px red;
 }
 
 
