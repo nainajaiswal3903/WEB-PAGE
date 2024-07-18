@@ -1,52 +1,57 @@
-:root{
-    --skincolor:#61dafb;
-}
-*{
-    /* background-color: black; */
+/* Define custom variables */
+:root {
+    --skincolor: #61dafb;
+    --background-color: black; /* New variable for background color */
 }
 
-header{
-    text-align: center;
-    color:rgb(30, 44, 239);
-    font-style: italic;
-    font-size: 50px;
+/* Apply general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Body styles */
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
-    /* background-color: black; */
+    background-color: var(--background-color); /* Set overall background color */
     overflow: hidden;
     position: relative;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.container{
-    border: solid blue 2px;
+/* Header styles */
+header {
+    text-align: center;
+    color: rgb(30, 44, 239);
+    font-style: italic;
+    font-size: 50px;
 }
 
-#currentTime{
-    padding-top: 50px; 
-    padding-bottom: 30px;
-    color: var(--skincolor);
-    font-size: larger;
-    font-size: xx-large;
-}
-
+/* Blue box styles */
 .blue-box {
-
     background-image: url('/img/3.gif');
     background-repeat: no-repeat;
-    background-attachment: fixed;  
+    background-attachment: fixed;
     background-size: contain;
     background-position: center;
     border-radius: 8px;
 }
 
+/* Current time display styles */
+#currentTime {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: var(--skincolor);
+    font-size: xx-large;
+}
+
+/* Data box styles */
 .data-box {
-    color:var(--skincolor);
+    color: var(--skincolor);
     padding: 20px;
     border-radius: 8px;
     margin-top: 2%;
@@ -57,27 +62,26 @@ body {
     border: solid var(--skincolor);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 10px rgb(66, 86, 233);
-    
 }
 
-
-
+/* Adjusted header styles */
 .header {
     position: absolute;
     color: white;
     display: none;
 }
 
-
+/* Time within header styles */
 .header .time {
     margin-left: 20px;
 }
 
-.card-group{
+/* Card group styles */
+.card-group {
     border: transparent;
-    /* border: solid 2px green; */
 }
 
+/* Individual card styles */
 .card {
     width: 70%;
     height: 70%;
@@ -87,6 +91,7 @@ body {
     align-items: center;
 }
 
+/* Image styles */
 img {
     width: 70%;
     height: 70%;
@@ -95,16 +100,16 @@ img {
     align-items: center;
 }
 
-
-.card{
-    align-items: center;
-    justify-content: center;
-}
-
-
-#head{
+/* Additional adjustments for specific areas */
+#head {
     padding: 0 70px 70px 0px;
 }
 
-
-
+/* Ensure all backgrounds are black */
+.blue-box,
+.data-box,
+.header,
+.card-group,
+.card {
+    background-color: var(--background-color);
+}
