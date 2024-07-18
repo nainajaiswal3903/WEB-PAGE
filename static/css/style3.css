@@ -3,11 +3,39 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* background-color: #282c34; */
+    background-image: url('/img/11.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size:contain;
+    background-position: center;
+    background-color: black;
+
+
 }
 
 .center-box {
-    font-size: 3rem;
-    /* color: #61dafb; */
     font-family: 'Courier New', Courier, monospace;
+}
+
+table, th, td {
+    align-items: center;
+    border: 1px solid #61dafb;
+    border-collapse: collapse;
+    color: #61dafb;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    background-color: transparent;
+
+}
+
+th{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+td{
+    text-align: left;
+    padding-right: 20px;
+
 }
