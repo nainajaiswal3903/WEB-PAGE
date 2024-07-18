@@ -26,9 +26,11 @@ body {
 /* Header styles */
 header {
     text-align: center;
-    color: rgb(30, 44, 239);
-    font-style: italic;
-    font-size: 50px;
+    color: var(--skincolor);
+    /* font-style: italic; */
+    font-size: 70px;
+    margin-bottom: -0.6%;
+
 }
 
 /* Blue box styles */
@@ -43,10 +45,15 @@ header {
 
 /* Current time display styles */
 #currentTime {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+
     color: var(--skincolor);
-    font-size: xx-large;
+    text-align: center;
+    font-size: xxx-large;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Data box styles */
