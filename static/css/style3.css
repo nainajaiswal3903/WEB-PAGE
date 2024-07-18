@@ -1,37 +1,33 @@
 body {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
+    background-color: black;
     background-image: url('/img/11.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;  
-    background-size:contain;
-    background-position: center;
-    background-color: black;
-    box-shadow: inset;
+    background-size: contain;
+    background-position: center; 
+    color: #61dafb;
+    text-align: center;
+    
     font-family: 'Courier New', Courier, monospace;
 }
 
-
-
-table
-{
-
-    height: 100vh;
-    /* padding-top: 200px; */
-    
-}
-th{
-    text-align: center;
-    font-size: larger;
-    font-weight: bold;
-    
+.custom-table {
+    background-color: transparent ;
+    color: #61dafb;
+    height: 85vh;
 }
 
+.custom-table th,
+.custom-table td {
+    background-color: transparent ;
+    color: #61dafb ;
+}
 
+.custom-table thead th {
+    color: #61dafb ;
+}
 
-td{
-    text-align: left;
-    /* padding-right: 20px; */
-
+.custom-table tbody tr:hover {
+    color: #000 ;
+    background-color: rgba(255, 255, 255, 0.5) ;
 }
