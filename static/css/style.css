@@ -18,6 +18,10 @@ body {
     font-size: 3rem;
     color: #61dafb;
     cursor: pointer;
-    font-display:unset;
     font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    background-attachment: fixed;
+    
 }
