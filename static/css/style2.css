@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    background-color: #282c34;
+    background-color: black;
     overflow: hidden;
     position: relative;
 }
@@ -24,6 +24,7 @@ body {
     padding-top: 20px;
     padding-bottom: 30px;
     color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .blue-box {
@@ -41,8 +42,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
-    width: 80%;
-    height: 300px;
+    width: 60%;
+    height: 100px;
     overflow-y: auto;
     display: none;
     border: solid var(--skincolor);
@@ -64,15 +65,16 @@ body {
 .header .time {
     margin-left: 20px;
 }
-#logo{
-    height: 30px;
-    width: 30px;
-    ;
+
+#image{
+    width: 20%;
+    height: 20%;
+    align-items: end;
+    justify-content: end;
+    display: flex;
+    margin-left: 1200px;
+    margin-top: 100px;
+
 }
-.btn-hello-world {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    display: none;
-    font-size: 40px;
-}
+
+

@@ -7,15 +7,9 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <div class="title-box" onclick="startFRIDAY()">F.R.I.D.A.Y</div>
-
-    <script>
-        function startFRIDAY() {
-            fetch('/start_friday').then(response => {
-                window.location.href = '/page2';
-            });
-        }
-    </script>  
+    <div class="title-box" onclick="startFRIDAY()">
+        <a href="page2.html">F.R.I.D.A.Y</a></div>
+ 
     
 </body>
 </html>
