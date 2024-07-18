@@ -1,15 +1,33 @@
+:root{
+    --skincolor:#61dafb;
+}
+
+header{
+    text-align: center;
+    color:rgb(30, 44, 239);
+    font-style: italic;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #282c34;
     overflow: hidden;
     position: relative;
 }
 
+#currentTime{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: chartreuse;
+}
+
 .blue-box {
+
     background-image: url('/img/3.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;  
@@ -19,8 +37,7 @@ body {
 }
 
 .data-box {
-    background-color: white;
-    color: black;
+    color:var(--skincolor);
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
@@ -28,6 +45,11 @@ body {
     height: 300px;
     overflow-y: auto;
     display: none;
+    border: solid var(--skincolor);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgb(66, 86, 233);
+    /* box-shadow: 0 0 10px rgba(27, 27, 27, 0.296); */
+    
 }
 
 .header {
@@ -38,17 +60,18 @@ body {
     display: none;
 }
 
-.time-container {
-    /* display: none; */
-}
 
 .header .time {
     margin-left: 20px;
 }
-
+#help{
+    height: 30px;
+    width: 30px;
+}
 .btn-hello-world {
     position: absolute;
     bottom: 20px;
     left: 20px;
     display: none;
+    font-size: 40px;
 }
