@@ -3,11 +3,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #282c34;
+    /* background-color: #282c34; */
 }
 
 .center-box {
     font-size: 3rem;
-    color: #61dafb;
+    /* color: #61dafb; */
     font-family: 'Courier New', Courier, monospace;
 }
