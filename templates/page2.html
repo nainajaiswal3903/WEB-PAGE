@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>F.R.I.D.A.I - Page 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+        }
+        .blue-box {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+        .data-box {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            width: 80%;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .header {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+        }
+        .header .time {
+            margin-left: 20px;
+        }
+        .btn-hello-world {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        } */
+    </style>
+</head>
+
+<body id="body2">
+    <div class="header">
+        <span>F.R.I.D.A.I</span>
+        <span class="time" id="currentTime"></span>
+    </div>
+    <div class="blue-box" id="blueBox">Loading...</div>
+    <div class="data-box" id="dataBox"></div>
+    <button class="btn btn-primary btn-hello-world" onclick="location.href='/page3'">Hello World</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            document.getElementById('currentTime').innerText = now.toLocaleTimeString();
+        }
+        setInterval(updateTime, 1000);
+
+        window.onload = function() {
+            const blueBox = document.getElementById('blueBox');
+            blueBox.style.display = 'block';
+            setTimeout(() => {
+                blueBox.style.display = 'none';
+                const socket = io();
+                socket.on('script_output', function(data) {
+                    const dataBox = document.getElementById('dataBox');
+                    dataBox.innerText += data.data + '\n';
+                    dataBox.scrollTop = dataBox.scrollHeight; // Scroll to the bottom
+                });
+            }, 3000);
+        };
+    </script>
+</body>
+
+</html>
