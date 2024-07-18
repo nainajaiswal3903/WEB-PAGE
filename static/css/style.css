@@ -19,9 +19,6 @@ body {
     color: #61dafb;
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
+    position: fixed;
 }
 
-p{
-    background-attachment: fixed;
-    
-}
