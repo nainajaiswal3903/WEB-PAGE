@@ -64,9 +64,10 @@ body {
 .header .time {
     margin-left: 20px;
 }
-#help{
+#logo{
     height: 30px;
     width: 30px;
+    ;
 }
 .btn-hello-world {
     position: absolute;
