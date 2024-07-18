@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="/static/css/style2.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <span>F.R.I.D.A.Y</span>
-        
     </div>
-    <div>
+    <div class="time-container">
         <span class="time" id="currentTime"></span>
     </div>
-    <div class="blue-box" id="blueBox"> </div>
+    <div class="blue-box" id="blueBox"></div>
     <div class="data-box" id="dataBox"></div>
-    <button class="btn btn-primary btn-hello-world" onclick="location.href='/page3'">Help</button>
+    <button class="btn btn-primary btn-hello-world" id="helpButton" onclick="location.href='/page3'">Help</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
     <script>
@@ -29,8 +28,20 @@
         window.onload = function() {
             const blueBox = document.getElementById('blueBox');
             blueBox.style.display = 'block';
+            blueBox.style.width = '100%';
+            blueBox.style.height = '100%';
+            blueBox.style.position = 'fixed';
+            blueBox.style.top = '0';
+            blueBox.style.left = '0';
+            blueBox.style.zIndex = '1000';
+
             setTimeout(() => {
                 blueBox.style.display = 'none';
+                document.getElementById('header').style.display = 'block';
+                document.getElementById('currentTime').style.display = 'block';
+                document.getElementById('dataBox').style.display = 'block';
+                document.getElementById('helpButton').style.display = 'block';
+
                 const socket = io();
                 socket.on('script_output', function(data) {
                     const dataBox = document.getElementById('dataBox');
@@ -40,6 +51,5 @@
             }, 3000);
         };
     </script>
-    
 </body>
 </html>
