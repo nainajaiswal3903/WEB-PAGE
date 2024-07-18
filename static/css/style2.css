@@ -10,7 +10,6 @@ header{
     color:rgb(30, 44, 239);
     font-style: italic;
     font-size: 50px;
-    /* padding-bottom: 20px; */
 }
 body {
     display: flex;
@@ -18,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    background-color: black;
+    /* background-color: black; */
     overflow: hidden;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
@@ -29,9 +28,11 @@ body {
 }
 
 #currentTime{
-    padding-top: 20px;
-    padding-bottom: 30px;
+    /* padding-top: 50%; */
+    /* padding-bottom: 30px; */
     color: var(--skincolor);
+    font-size: larger;
+    font-weight: 800;
 }
 
 .blue-box {
@@ -48,7 +49,7 @@ body {
     color:var(--skincolor);
     padding: 20px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 2%;
     width: 60%;
     height: 100px;
     overflow-y: auto;
@@ -59,10 +60,10 @@ body {
     
 }
 
+
+
 .header {
     position: absolute;
-    /* top: 10px;
-    left: 10px; */
     color: white;
     display: none;
 }
@@ -87,21 +88,25 @@ body {
 }
 
 img {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     margin-bottom: -20%;
+    margin-top: 1%;
+    /* margin-left: 10%; */
+    align-items: center;
 }
 
 
 .card{
     align-items: center;
-
-    border: transparent;
-
-
+    justify-content: center;
+    border: solid 2px red;
 }
 
 
+#head{
+    padding: 0 70px 70px 0px;
+}
 
 
 
