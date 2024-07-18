@@ -1,3 +1,7 @@
+:root{
+    --skincolor:#61dafb;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -15,12 +19,13 @@ body {
 
 .title-box {
     font-size: 3rem;
-    color: #61dafb;
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
     position: fixed;
 }
 
 a{
-    font-display: none;
+    text-decoration: none;
+    color: var(--skincolor);
+
 }
