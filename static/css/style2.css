@@ -19,7 +19,7 @@ body {
     align-items: center;
     background-color: var(--background-color); /* Set overall background color */
     overflow: hidden;
-    /* position: relative; */
+    position: relative;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -120,25 +120,3 @@ img {
 .card {
     background-color: var(--background-color);
 }
-
-
-#img1{
-
-}
-
-#img2{
-    
-}
-
-#img3{
-    
-}
-
-#img4{
-    
-}
-
-#img5{
-    
-}
-
