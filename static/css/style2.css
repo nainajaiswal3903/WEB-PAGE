@@ -43,7 +43,7 @@ header {
 #currentTime {
     color: var(--skincolor);
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -54,7 +54,7 @@ header {
     border-radius: 8px;
     margin-top: 2%;
     width: 70%;
-    height: 100px;
+    height: 120px;
     overflow-y: auto;
     display: none;
     border: solid var(--skincolor);
@@ -76,7 +76,7 @@ header {
 
 #helpButton{
     display: none;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 70%;
     text-align: end;
     /* border: solid 2px red; */
