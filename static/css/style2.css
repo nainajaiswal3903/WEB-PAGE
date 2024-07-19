@@ -19,7 +19,7 @@ body {
     align-items: center;
     background-color: var(--background-color); /* Set overall background color */
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     font-family: 'Courier New', Courier, monospace;
 }
 
