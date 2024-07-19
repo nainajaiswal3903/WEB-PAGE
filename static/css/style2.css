@@ -84,8 +84,8 @@ header {
 }
 
 
-#HP{
-    /* border:solid 2px red; */
+#helpButton{
+    display: none;
     margin-top: 5%;
     margin-left: 70%;
     text-align: end;
