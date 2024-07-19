@@ -1,16 +1,13 @@
-/* Define custom variables */
 :root {
     --skincolor: #61dafb;
-    --background-color: black; /* New variable for background color */
+    --background-color: black; 
 }
 
-/* Body styles */
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--background-color); Set overall background color */
     overflow: hidden;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
@@ -18,7 +15,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
     background-image: url('/img/2.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;  
@@ -27,7 +23,6 @@ body {
     background-color: black;
 }
 
-/* Header styles */
 header {
     text-align: center;
     color: var(--skincolor);
@@ -36,7 +31,6 @@ header {
 
 }
 
-/* Blue box styles */
 .blue-box {
     background-image: url('/img/3.gif');
     background-repeat: no-repeat;
@@ -46,7 +40,6 @@ header {
     border-radius: 8px;
 }
 
-/* Current time display styles */
 #currentTime {
     color: var(--skincolor);
     text-align: center;
@@ -55,7 +48,6 @@ header {
     align-items: center;
 }
 
-/* Data box styles */
 .data-box {
     color: var(--skincolor);
     padding-top: 80px;
@@ -70,7 +62,6 @@ header {
     box-shadow: 0 0 10px rgb(66, 86, 233);
 }
 
-/* Adjusted header styles */
 .header {
     margin-top: 20%;
     position: absolute;
@@ -78,7 +69,6 @@ header {
     display: none;
 }
 
-/* Time within header styles */
 .header .time {
     margin-left: 20px;
 }
