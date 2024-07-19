@@ -4,30 +4,33 @@
     --background-color: black; /* New variable for background color */
 }
 
-/* Apply general styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Body styles */
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color); /* Set overall background color */
+    /* background-color: var(--background-color); Set overall background color */
     overflow: hidden;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-image: url('/img/2.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size:contain;
+    background-position: center;
+    background-color: black;
 }
 
 /* Header styles */
 header {
     text-align: center;
     color: var(--skincolor);
-    /* font-style: italic; */
     font-size: 70px;
     margin-bottom: -0.6%;
 
@@ -45,10 +48,6 @@ header {
 
 /* Current time display styles */
 #currentTime {
-    padding-top: 5%;
-    padding-bottom: 10%;
-    padding-left: 10%;
-
     color: var(--skincolor);
     text-align: center;
     font-size: xxx-large;
@@ -59,11 +58,11 @@ header {
 /* Data box styles */
 .data-box {
     color: var(--skincolor);
-    padding: 20px;
+    padding-top: 80px;
     border-radius: 8px;
     margin-top: 2%;
-    width: 60%;
-    height: 100px;
+    width: 70%;
+    height: 300px;
     overflow-y: auto;
     display: none;
     border: solid var(--skincolor);
@@ -73,6 +72,7 @@ header {
 
 /* Adjusted header styles */
 .header {
+    margin-top: 20%;
     position: absolute;
     color: white;
     display: none;
@@ -83,50 +83,20 @@ header {
     margin-left: 20px;
 }
 
-/* Card group styles */
-.card-group {
-    border: transparent;
+
+#HP{
+    /* border:solid 2px red; */
+    margin-top: 5%;
+    margin-left: 70%;
+    text-align: end;
 }
 
-/* Individual card styles */
-.card {
-    width: 70%;
-    height: 70%;
-    border: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#imagehelp{
+    width: 80%;
+    height: 80%;
 }
 
-/* Image styles */
-img {
-    width: 70%;
-    height: 70%;
-    margin-bottom: -20%;
-    margin-top: 1%;
-    align-items: center;
-}
-
-/* Additional adjustments for specific areas */
-#head {
-    padding: 0 50px 50px 0px;
-}
-
-/* Ensure all backgrounds are black */
-.blue-box,
-.data-box,
-.header,
-.card-group,
-.card {
-    background-color: var(--background-color);
-}
-<<<<<<< HEAD
-=======
 
 
-#tail{
-    padding: 0 50px 50px 0px;
 
-}
 
->>>>>>> d4eba814b3c8d4ea4ac2ead6119465ce318e6996
