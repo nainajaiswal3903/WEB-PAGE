@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page1</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('/img/1.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size:contain;
+            background-position: center;
+            background-color: black;
+        
+        }
+        
+        
+        .title-box {
+            font-size: 3rem;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+            position: fixed;
+        }
+        
+        a{
+            text-decoration: none;
+            color: #61dafb;
+        }
+    </style>
 </head>
 <body>
-    <div class="title-box" onclick="startFRIDAY()">
-        <a href="page2.html">F.R.I.D.A.Y</a></div>
- 
-    
+    <div class="title-box" onclick="startFRIDAY()">F.R.I.D.A.Y</div>
+
+    <script>
+        function startFRIDAY() {
+            fetch('/start_friday').then(response => {
+                window.location.href = '/page2';
+            });
+        }
+    </script>
 </body>
 </html>

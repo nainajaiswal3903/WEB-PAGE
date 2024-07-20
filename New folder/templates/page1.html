@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('{{ url_for('static', filename='img/1.gif') }}');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: contain;  /* Changed to cover to ensure the image covers the entire background */
+            background-position: center;
+            background-color: black;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .title-box {
+            font-size: 3rem;
+            cursor: pointer;
+            color: #61dafb;  /* Text color for visibility */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  /* Adds a shadow to improve readability */
+            position: fixed;
+            z-index: 10;  /* Ensure it's above other elements */
+        }
+        
+        a {
+            text-decoration: none;
+            color: #61dafb;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-box" onclick="startFRIDAY()">F.R.I.D.A.Y</div>
+
+    <script>
+        function startFRIDAY() {
+            fetch('/start_friday').then(response => {
+                window.location.href = '/page2';
+            });
+        }
+    </script>
+</body>
+</html>
